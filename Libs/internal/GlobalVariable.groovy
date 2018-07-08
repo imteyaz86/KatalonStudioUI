@@ -33,12 +33,17 @@ public class GlobalVariable {
      */
     public static Object Name
      
+    /**
+     * <p></p>
+     */
+    public static Object Browser
+     
 
     static {
         def allVariables = [:]        
         allVariables.put('default', ['G_Timeout' : 10, 'G_SiteURL' : 'http://demoaut.katalon.com', 'G_ShortTimeOut' : 5, 'Name' : 'http://demoaut.katalon.com111'])
         allVariables.put('Test', allVariables['default'] + ['G_Timeout' : 30, 'G_SiteURL' : 'http://demoaut.katalon.com', 'G_ShortTimeOut' : 5])
-        allVariables.put('UAT', allVariables['default'] + [:])
+        allVariables.put('UAT', allVariables['default'] + ['Browser' : 'Chrome'])
         
         String profileName = RunConfiguration.getExecutionProfile()
         
@@ -47,6 +52,7 @@ public class GlobalVariable {
         G_SiteURL = selectedVariables['G_SiteURL']
         G_ShortTimeOut = selectedVariables['G_ShortTimeOut']
         Name = selectedVariables['Name']
+        Browser = selectedVariables['Browser']
         
     }
 }
