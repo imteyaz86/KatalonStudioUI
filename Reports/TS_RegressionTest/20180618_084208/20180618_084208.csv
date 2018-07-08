@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS_RegressionTest,Chrome 67.0.3396.87,,2018-06-18 08:42:10,2018-06-18 08:43:23,1m - 12.610s,FAILED
+,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,Chrome 67.0.3396.87,Verify if users can login successful. \n\nSteps:\n- Click on 'Book Appointment' button to login\n- Input username and password\n- Click on 'Login' button\n\nExpected result:\n'Appointment' section is displayed after successful login,2018-06-18 08:42:11,2018-06-18 08:43:06,55.250s,FAILED
+comment,Chrome 67.0.3396.87,,2018-06-18 08:42:11,2018-06-18 08:42:12,0.133s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-18 08:42:12,2018-06-18 08:42:12,0.015s,PASSED
+openBrowser,Chrome 67.0.3396.87,,2018-06-18 08:42:12,2018-06-18 08:42:34,22.099s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-18 08:42:34,2018-06-18 08:43:06,32.263s,FAILED
+,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,Chrome 67.0.3396.87,Verify if users can book an appointment sucessfully.\nPre-condition: Users have already logged in\n\nSteps:\n- Fill in appoinment's information\n- Click on appointment's button\n\nExpected results:\nAppointment Confirmation page is displayed,2018-06-18 08:43:06,2018-06-18 08:43:23,16.696s,ERROR
+Statement - Try,Chrome 67.0.3396.87,,2018-06-18 08:43:06,2018-06-18 08:43:22,15.598s,PASSED
+Statement - Catch (Throwable t),Chrome 67.0.3396.87,,2018-06-18 08:43:22,2018-06-18 08:43:22,0.005s,PASSED
+Statement - Finally,Chrome 67.0.3396.87,,2018-06-18 08:43:22,2018-06-18 08:43:23,0.821s,PASSED

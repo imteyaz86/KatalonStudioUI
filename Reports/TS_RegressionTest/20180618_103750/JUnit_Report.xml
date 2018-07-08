@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_RegressionTest" time="32" tests="1" failures="0" errors="1">
+   <testsuite name="TS_RegressionTest" tests="1" failures="0" errors="1" time="32" timestamp="2018-06-18 10:37:57" hostname="DESKTOP-I3VEVNM$ - DESKTOP-I3VEVNM" id="Test Suites/TS_RegressionTest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\KatalonStudio\\KatalonSamplePoc\\SampleProject\\Reports\\TS_RegressionTest\\20180618_103750"/>
+         <property name="logFiles" value="D:\\KatalonStudio\\KatalonSamplePoc\\SampleProject\\Reports\\TS_RegressionTest\\20180618_103750\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DESKTOP-I3VEVNM$ - DESKTOP-I3VEVNM"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.87"/>
+         <property name="hostAddress" value="192.168.1.6"/>
+         <property name="sessionId" value="dfbf5da70ab95fe2d2a33048ddf96627"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Main Test Cases/TC1_Verify Successful Login" classname="Test Cases/Main Test Cases/TC1_Verify Successful Login" status="PASSED">
+         <system-out><![CDATA[2018-06-18 10:37:58 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC1_Verify Successful Login: Test Cases/Main Test Cases/TC1_Verify Successful Login
+
+2018-06-18 10:37:59 - [TEST_STEP][PASSED] - comment: Story: Login to CURA system
+
+2018-06-18 10:37:59 - [TEST_STEP][PASSED] - comment: Given that the user has the valid login information
+
+2018-06-18 10:37:59 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://demoaut.katalon.com'
+
+2018-06-18 10:38:16 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2018-06-18 10:38:16 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2018-06-18 10:38:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2018-06-18 10:38:17 - [TEST_STEP][PASSED] - waitForElementVisible: Object 'Object Repository/Page_Login/txt_UserName' is visible
+
+2018-06-18 10:38:18 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Login/txt_UserName' is visible
+
+2018-06-18 10:38:18 - [TEST_STEP][PASSED] - setText: Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2018-06-18 10:38:18 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2018-06-18 10:38:18 - [TEST_STEP][PASSED] - setText: Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2018-06-18 10:38:18 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2018-06-18 10:38:18 - [TEST_STEP][PASSED] - comment: When he logins to CURA system
+
+2018-06-18 10:38:18 - [TEST_STEP][PASSED] - click: Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2018-06-18 10:38:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2018-06-18 10:38:19 - [TEST_STEP][PASSED] - comment: Then he should be able to login successfully
+
+2018-06-18 10:38:19 - [TEST_STEP][PASSED] - Statement - landingPage = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_CuraAppointment/div_Appointment), G_Timeout): Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2018-06-18 10:38:20 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2018-06-18 10:38:20 - [TEST_STEP][PASSED] - com.commonkeyword.newKeyword.switchWindow: com.commonkeyword.newKeyword.switchWindow is PASSED
+
+2018-06-18 10:38:20 - [MESSAGE][PASSED] - com.commonkeyword.newKeyword.switchWindow is PASSED
+
+2018-06-18 10:38:20 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-18 10:38:22 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC2_Verify Successful Appointment" classname="Test Cases/Main Test Cases/TC2_Verify Successful Appointment" status="ERROR">
+         <error type="ERROR" message="Test Cases/Main Test Cases/TC2_Verify Successful Appointment FAILED because (of) java.lang.NullPointerException"/>
+         <system-out><![CDATA[2018-06-18 10:38:22 - [TEST_CASE][ERROR] - Test Cases/Main Test Cases/TC2_Verify Successful Appointment: Test Cases/Main Test Cases/TC2_Verify Successful Appointment FAILED because (of) java.lang.NullPointerException
+
+2018-06-18 10:38:22 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-06-18 10:38:22 - [TEST_STEP][PASSED] - comment: Story: Book an appointment
+
+2018-06-18 10:38:22 - [TEST_STEP][PASSED] - comment: Given that the user has logged into their account
+
+2018-06-18 10:38:22 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://demoaut.katalon.com'
+
+2018-06-18 10:38:29 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2018-06-18 10:38:29 - [TEST_STEP][PASSED] - Statement - com.kms.katalon.core.testdata.TestDataFactory.readExcelData(null, ""): null
+
+2018-06-18 10:38:29 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-18 10:38:29 - [TEST_STEP][PASSED] - Statement - Throw t: null
+
+2018-06-18 10:38:29 - [TEST_STEP][PASSED] - Statement - Finally: Browser is closed
+
+2018-06-18 10:38:29 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-18 10:38:30 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-18 10:38:22 - [TEST_CASE][ERROR] - Test Cases/Main Test Cases/TC2_Verify Successful Appointment: Test Cases/Main Test Cases/TC2_Verify Successful Appointment FAILED because (of) java.lang.NullPointerException]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-18 10:37:57 - [TEST_SUITE][ERROR] - TS_RegressionTest: Test Cases/Main Test Cases/TC2_Verify Successful Appointment FAILED because (of) java.lang.NullPointerException]]></system-out>
+      <system-err><![CDATA[2018-06-18 10:37:57 - [TEST_SUITE][ERROR] - TS_RegressionTest: Test Cases/Main Test Cases/TC2_Verify Successful Appointment FAILED because (of) java.lang.NullPointerException]]></system-err>
+   </testsuite>
+</testsuites>

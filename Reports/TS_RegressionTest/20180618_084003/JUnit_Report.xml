@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_RegressionTest" time="87" tests="0" failures="1" errors="1">
+   <testsuite name="TS_RegressionTest" tests="0" failures="1" errors="1" time="87" timestamp="2018-06-18 08:40:09" hostname="Zulfaquar - DESKTOP-I3VEVNM" id="Test Suites/TS_RegressionTest">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\KatalonStudio\\KatalonSamplePoc\\SampleProject\\Reports\\TS_RegressionTest\\20180618_084003"/>
+         <property name="logFiles" value="D:\\KatalonStudio\\KatalonSamplePoc\\SampleProject\\Reports\\TS_RegressionTest\\20180618_084003\\execution0.log"/>
+         <property name="attachments" value="D:\\KatalonStudio\\KatalonSamplePoc\\SampleProject\\Reports\\TS_RegressionTest\\20180618_084003\\1529291479434.png"/>
+         <property name="hostName" value="Zulfaquar - DESKTOP-I3VEVNM"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.4.2.1"/>
+         <property name="browser" value="Chrome 67.0.3396.87"/>
+         <property name="hostAddress" value="192.168.1.6"/>
+         <property name="sessionId" value="feecbe8fda1ce2545470011c6f42b564"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Main Test Cases/TC1_Verify Successful Login" classname="Test Cases/Main Test Cases/TC1_Verify Successful Login" status="FAILED">
+         <failure type="FAILED" message="Unable to click on object 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' located by 'By.xpath: //*[@id = 'btn-make-appointment']' not found)"/>
+         <system-out><![CDATA[2018-06-18 08:40:10 - [TEST_CASE][FAILED] - Test Cases/Main Test Cases/TC1_Verify Successful Login: Test Cases/Main Test Cases/TC1_Verify Successful Login FAILED because (of) Unable to click on object 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' located by 'By.xpath: //*[@id = 'btn-make-appointment']' not found)
+
+2018-06-18 08:40:12 - [TEST_STEP][PASSED] - comment: Story: Login to CURA system
+
+2018-06-18 08:40:12 - [TEST_STEP][PASSED] - comment: Given that the user has the valid login information
+
+2018-06-18 08:40:12 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://demoaut.katalon.com2'
+
+2018-06-18 08:40:48 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com2'
+
+2018-06-18 08:40:48 - [TEST_STEP][FAILED] - click: Unable to click on object 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' located by 'By.xpath: //*[@id = 'btn-make-appointment']' not found)
+
+2018-06-18 08:41:19 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' located by 'By.xpath: //*[@id = 'btn-make-appointment']' not found)
+[[ATTACHMENT|D:\\KatalonStudio\\KatalonSamplePoc\\SampleProject\\Reports\\TS_RegressionTest\\20180618_084003\\1529291479434.png]]]]></system-out>
+         <system-err><![CDATA[2018-06-18 08:40:10 - [TEST_CASE][FAILED] - Test Cases/Main Test Cases/TC1_Verify Successful Login: Test Cases/Main Test Cases/TC1_Verify Successful Login FAILED because (of) Unable to click on object 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' located by 'By.xpath: //*[@id = 'btn-make-appointment']' not found)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC2_Verify Successful Appointment" classname="Test Cases/Main Test Cases/TC2_Verify Successful Appointment" status="ERROR">
+         <error type="ERROR" message="Test Cases/Main Test Cases/TC2_Verify Successful Appointment FAILED because (of) Variable 'WebUICustomKeywords' is not defined for test case."/>
+         <system-out><![CDATA[2018-06-18 08:41:19 - [TEST_CASE][ERROR] - Test Cases/Main Test Cases/TC2_Verify Successful Appointment: Test Cases/Main Test Cases/TC2_Verify Successful Appointment FAILED because (of) Variable 'WebUICustomKeywords' is not defined for test case.
+
+2018-06-18 08:41:20 - [TEST_STEP][PASSED] - Statement - Try: null
+
+2018-06-18 08:41:20 - [TEST_STEP][PASSED] - comment: Story: Book an appointment
+
+2018-06-18 08:41:20 - [TEST_STEP][PASSED] - comment: Given that the user has logged into their account
+
+2018-06-18 08:41:20 - [TEST_STEP][PASSED] - openBrowser: Browser is opened with url: 'http://demoaut.katalon.com2'
+
+2018-06-18 08:41:20 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2018-06-18 08:41:36 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com2'
+
+2018-06-18 08:41:36 - [TEST_STEP][PASSED] - Statement - WebUI.callTestCase(com.kms.katalon.core.testcase.TestCaseFactory.findTestCase(Common Test Cases/Login), ["Username":"John Doe", "Password":"ThisIsNotAPassword"], STOP_ON_FAILURE): null
+
+2018-06-18 08:41:36 - [TEST_STEP][PASSED] - Statement - Catch (Throwable t): null
+
+2018-06-18 08:41:36 - [TEST_STEP][PASSED] - Statement - Throw t: null
+
+2018-06-18 08:41:36 - [TEST_STEP][PASSED] - Statement - Finally: Browser is closed
+
+2018-06-18 08:41:36 - [TEST_STEP][PASSED] - closeBrowser: Browser is closed
+
+2018-06-18 08:41:37 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2018-06-18 08:41:19 - [TEST_CASE][ERROR] - Test Cases/Main Test Cases/TC2_Verify Successful Appointment: Test Cases/Main Test Cases/TC2_Verify Successful Appointment FAILED because (of) Variable 'WebUICustomKeywords' is not defined for test case.]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-06-18 08:40:09 - [TEST_SUITE][FAILED] - TS_RegressionTest: Test Cases/Main Test Cases/TC1_Verify Successful Login FAILED because (of) Unable to click on object 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' located by 'By.xpath: //*[@id = 'btn-make-appointment']' not found)]]></system-out>
+      <system-err><![CDATA[2018-06-18 08:40:09 - [TEST_SUITE][FAILED] - TS_RegressionTest: Test Cases/Main Test Cases/TC1_Verify Successful Login FAILED because (of) Unable to click on object 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' (Root cause: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' located by 'By.xpath: //*[@id = 'btn-make-appointment']' not found)]]></system-err>
+   </testsuite>
+</testsuites>

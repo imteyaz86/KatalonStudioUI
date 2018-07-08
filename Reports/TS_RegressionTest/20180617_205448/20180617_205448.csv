@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS_RegressionTest,Chrome 67.0.3396.87,,2018-06-17 20:54:54,2018-06-17 20:55:21,26.831s,ERROR
+,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,Chrome 67.0.3396.87,Verify if users can login successful. \n\nSteps:\n- Click on 'Book Appointment' button to login\n- Input username and password\n- Click on 'Login' button\n\nExpected result:\n'Appointment' section is displayed after successful login,2018-06-17 20:54:55,2018-06-17 20:55:12,16.700s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-17 20:54:57,2018-06-17 20:54:58,1.087s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-17 20:54:58,2018-06-17 20:54:58,0.006s,PASSED
+openBrowser,Chrome 67.0.3396.87,,2018-06-17 20:54:58,2018-06-17 20:55:07,8.952s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-17 20:55:07,2018-06-17 20:55:08,1.324s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-17 20:55:08,2018-06-17 20:55:08,0.136s,PASSED
+setText,Chrome 67.0.3396.87,,2018-06-17 20:55:08,2018-06-17 20:55:09,0.799s,PASSED
+setText,Chrome 67.0.3396.87,,2018-06-17 20:55:09,2018-06-17 20:55:10,0.455s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-17 20:55:10,2018-06-17 20:55:10,0.004s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-17 20:55:10,2018-06-17 20:55:11,1.433s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-17 20:55:11,2018-06-17 20:55:11,0.002s,PASSED
+"Statement - landingPage = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_CuraAppointment/div_Appointment), G_Timeout)",Chrome 67.0.3396.87,,2018-06-17 20:55:11,2018-06-17 20:55:11,0.058s,PASSED
+closeBrowser,Chrome 67.0.3396.87,,2018-06-17 20:55:11,2018-06-17 20:55:12,0.925s,PASSED
+,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,Chrome 67.0.3396.87,Verify if users can book an appointment sucessfully.\nPre-condition: Users have already logged in\n\nSteps:\n- Fill in appoinment's information\n- Click on appointment's button\n\nExpected results:\nAppointment Confirmation page is displayed,2018-06-17 20:55:12,2018-06-17 20:55:21,8.409s,ERROR
+Statement - Try,Chrome 67.0.3396.87,,2018-06-17 20:55:12,2018-06-17 20:55:20,7.151s,PASSED
+Statement - Catch (Throwable t),Chrome 67.0.3396.87,,2018-06-17 20:55:20,2018-06-17 20:55:20,0.007s,PASSED
+Statement - Finally,Chrome 67.0.3396.87,,2018-06-17 20:55:20,2018-06-17 20:55:21,0.874s,PASSED

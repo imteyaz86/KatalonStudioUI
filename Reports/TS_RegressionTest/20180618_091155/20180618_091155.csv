@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS_RegressionTest,Chrome 67.0.3396.87,,2018-06-18 09:12:00,2018-06-18 09:12:46,46.883s,PASSED
+,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,Chrome 67.0.3396.87,Verify if users can login successful. \n\nSteps:\n- Click on 'Book Appointment' button to login\n- Input username and password\n- Click on 'Login' button\n\nExpected result:\n'Appointment' section is displayed after successful login,2018-06-18 09:12:01,2018-06-18 09:12:33,31.927s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-18 09:12:02,2018-06-18 09:12:02,0.102s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-18 09:12:02,2018-06-18 09:12:02,0.010s,PASSED
+openBrowser,Chrome 67.0.3396.87,,2018-06-18 09:12:02,2018-06-18 09:12:25,23.615s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-18 09:12:25,2018-06-18 09:12:27,1.468s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-18 09:12:27,2018-06-18 09:12:27,0.188s,PASSED
+setText,Chrome 67.0.3396.87,,2018-06-18 09:12:27,2018-06-18 09:12:29,2.016s,PASSED
+setText,Chrome 67.0.3396.87,,2018-06-18 09:12:29,2018-06-18 09:12:29,0.342s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-18 09:12:29,2018-06-18 09:12:29,0.005s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-18 09:12:29,2018-06-18 09:12:31,1.491s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-18 09:12:31,2018-06-18 09:12:31,0.003s,PASSED
+"Statement - landingPage = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_CuraAppointment/div_Appointment), G_Timeout)",Chrome 67.0.3396.87,,2018-06-18 09:12:31,2018-06-18 09:12:31,0.130s,PASSED
+newpackage.newKeyword.switchWindow,Chrome 67.0.3396.87,,2018-06-18 09:12:31,2018-06-18 09:12:31,0.266s,PASSED
+"Statement - println(""How "" + Name)",Chrome 67.0.3396.87,,2018-06-18 09:12:31,2018-06-18 09:12:31,0.045s,PASSED
+closeBrowser,Chrome 67.0.3396.87,,2018-06-18 09:12:31,2018-06-18 09:12:33,1.196s,PASSED
+,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,Chrome 67.0.3396.87,Verify if users can book an appointment sucessfully.\nPre-condition: Users have already logged in\n\nSteps:\n- Fill in appoinment's information\n- Click on appointment's button\n\nExpected results:\nAppointment Confirmation page is displayed,2018-06-18 09:12:33,2018-06-18 09:12:46,13.724s,PASSED
+Statement - Try,Chrome 67.0.3396.87,,2018-06-18 09:12:33,2018-06-18 09:12:45,12.634s,PASSED
+Statement - Finally,Chrome 67.0.3396.87,,2018-06-18 09:12:45,2018-06-18 09:12:46,0.831s,PASSED

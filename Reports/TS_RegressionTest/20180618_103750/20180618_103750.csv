@@ -1,0 +1,22 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS_RegressionTest,Chrome 67.0.3396.87,,2018-06-18 10:37:57,2018-06-18 10:38:30,32.394s,ERROR
+,,,,,,
+Test Cases/Main Test Cases/TC1_Verify Successful Login,Chrome 67.0.3396.87,Verify if users can login successful. \n\nSteps:\n- Click on 'Book Appointment' button to login\n- Input username and password\n- Click on 'Login' button\n\nExpected result:\n'Appointment' section is displayed after successful login,2018-06-18 10:37:58,2018-06-18 10:38:22,23.851s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-18 10:37:59,2018-06-18 10:37:59,0.103s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-18 10:37:59,2018-06-18 10:37:59,0.009s,PASSED
+openBrowser,Chrome 67.0.3396.87,,2018-06-18 10:37:59,2018-06-18 10:38:16,17.386s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-18 10:38:16,2018-06-18 10:38:17,1.131s,PASSED
+waitForElementVisible,Chrome 67.0.3396.87,,2018-06-18 10:38:17,2018-06-18 10:38:18,0.229s,PASSED
+setText,Chrome 67.0.3396.87,,2018-06-18 10:38:18,2018-06-18 10:38:18,0.335s,PASSED
+setText,Chrome 67.0.3396.87,,2018-06-18 10:38:18,2018-06-18 10:38:18,0.406s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-18 10:38:18,2018-06-18 10:38:18,0.003s,PASSED
+click,Chrome 67.0.3396.87,,2018-06-18 10:38:18,2018-06-18 10:38:19,0.974s,PASSED
+comment,Chrome 67.0.3396.87,,2018-06-18 10:38:19,2018-06-18 10:38:19,0.003s,PASSED
+"Statement - landingPage = com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Page_CuraAppointment/div_Appointment), G_Timeout)",Chrome 67.0.3396.87,,2018-06-18 10:38:19,2018-06-18 10:38:20,0.502s,PASSED
+com.commonkeyword.newKeyword.switchWindow,Chrome 67.0.3396.87,,2018-06-18 10:38:20,2018-06-18 10:38:20,0.538s,PASSED
+closeBrowser,Chrome 67.0.3396.87,,2018-06-18 10:38:20,2018-06-18 10:38:22,1.408s,PASSED
+,,,,,,
+Test Cases/Main Test Cases/TC2_Verify Successful Appointment,Chrome 67.0.3396.87,Verify if users can book an appointment sucessfully.\nPre-condition: Users have already logged in\n\nSteps:\n- Fill in appoinment's information\n- Click on appointment's button\n\nExpected results:\nAppointment Confirmation page is displayed,2018-06-18 10:38:22,2018-06-18 10:38:30,7.794s,ERROR
+Statement - Try,Chrome 67.0.3396.87,,2018-06-18 10:38:22,2018-06-18 10:38:29,6.898s,PASSED
+Statement - Catch (Throwable t),Chrome 67.0.3396.87,,2018-06-18 10:38:29,2018-06-18 10:38:29,0.004s,PASSED
+Statement - Finally,Chrome 67.0.3396.87,,2018-06-18 10:38:29,2018-06-18 10:38:30,0.674s,PASSED
