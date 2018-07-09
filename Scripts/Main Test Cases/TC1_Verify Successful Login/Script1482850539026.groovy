@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Page_CuraHomepage/btn_MakeAppointment'))
 WebUI.waitForElementVisible(findTestObject('Page_Login/txt_UserName'), 100)
 
 //Read Data from excel
-WebUI.setText(findTestObject('Page_Login/txt_UserName'),findTestData("Login").getValue("UserName",CustomKeywords.'com.commonkeyword.Generic.rowNumber'("Login", "TC5") ))
+WebUI.setText(findTestObject('Page_Login/txt_UserName'),findTestData("Login").getValue("UserName",CustomKeywords.'com.commonkeyword.Generic.rowNumber'("Login", "TC1") ))
 
 //WebUI.setText(findTestObject('Page_Login/txt_UserName'), Username)
 
