@@ -19,6 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 
+try {
 WebUI.comment('Story: Login to CURA system')
 
 WebUI.comment('Given that the user has the valid login information')
@@ -29,7 +30,10 @@ WebUI.click(findTestObject('Page_CuraHomepage/btn_MakeAppointment'))
 
 WebUI.waitForElementVisible(findTestObject('Page_Login/txt_UserName'), 100)
 
-WebUI.setText(findTestObject('Page_Login/txt_UserName'), Username)
+//Read Data from excel
+WebUI.setText(findTestObject('Page_Login/txt_UserName'),findTestData("Login").getValue("UserName",CustomKeywords.'com.commonkeyword.Generic.rowNumber'("Login", "TC5") ))
+
+//WebUI.setText(findTestObject('Page_Login/txt_UserName'), Username)
 
 WebUI.setText(findTestObject('Page_Login/txt_Password'), Password)
 
@@ -41,5 +45,13 @@ WebUI.comment('Then he should be able to login successfully')
 
 landingPage = WebUI.verifyElementPresent(findTestObject('Page_CuraAppointment/div_Appointment'), GlobalVariable.G_Timeout)
 CustomKeywords.'com.commonkeyword.newKeyword.switchWindow'()
-WebUI.closeBrowser()
+}catch (Throwable t) {
+throw t;
+}
+
+finally {
+WebUI.closeBrowser() 
+
+}
+
 
